@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍅 Focus Flow Timer</title>
+<link rel="stylesheet" href="FocusTimer.css">
+</head>
+<body>
+    <div class="timer-card">
+        <h1>🍅 FOCUS FLOW</h1>
+
+        <div class="display">
+            <div class="timer" id="timerDisplay">25:00</div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-start" id="startBtn">▶ Start</button>
+            <button class="btn-pause" id="pauseBtn">⏸ Pause</button>
+            <button class="btn-reset" id="resetBtn">🔄 Reset</button>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-add" id="add1MinBtn">+1 min</button>
+            <button class="btn-add" id="add5MinBtn">+5 min</button>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-item">
+                <span class="stat-label">📊 Sessions completed</span>
+                <span class="stat-value" id="sessionCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">⏱️ Total focus time</span>
+                <span class="stat-value" id="totalMinutes">0</span>
+            </div>
+        </div>
+
+        <div class="stats-panel">
+            <h3 style="margin-bottom: 12px; font-size: 1.1rem;">📜 Session History</h3>
+            <div class="history-list" id="historyList">
+                <div class="empty-history">✨ No sessions yet. Complete a focus block!</div>
+            </div>
+            <button class="btn-clear" id="clearHistoryBtn">🗑️ Clear All History</button>
+        </div>
+    </div>
+<script src="focusTimer.js"></script>
+    
+</body>
+</html>
